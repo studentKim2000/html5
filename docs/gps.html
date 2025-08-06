@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script>
+       navigator.geolocation.getCurrentPosition( (position) => {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        const accuracy = position.coords.accuracy;
+
+        document.write(`<h1>위도: ${lat}</h1>`);
+        document.write("<br>")
+        document.write(`<h1>경도: ${lon}</h1>`);
+        document.write("<br>")
+        document.write(`<h1>정확도: ${accuracy} 미터</h1>`);
+       });
+    </script>
+
+  </head>
+  <body>    
+  </body>
+</html>  
